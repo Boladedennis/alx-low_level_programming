@@ -4,7 +4,7 @@
 /**
  * main - Entry point
  * Description: knowing if a random number is positive or negative
- * Return 0
+ * Return: 0
  */
 
 int main(void)
@@ -18,5 +18,5 @@ int main(void)
 	{ printf("%d is positive\n", n); }
 	else
 	{ printf("%d is zero\n", n); }
-	return 0;
+	return (0);
 }
