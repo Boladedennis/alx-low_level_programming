@@ -1,17 +1,16 @@
 #include <stdio.h>
-#include "main.h"
 
 /**
- * main - Entry point
+ * main - Fizz Buzz code
  *
  * Return: void
  */
 
 int main(void)
 {
-	int i;
+	int i = 1;
 
-	for (i = 1; i <= 100; i++)
+	while (i <= 100)
 	{
 		if ((i % 3 == 0) && (i % 5 == 0))
 		{
@@ -27,9 +26,15 @@ int main(void)
 		}
 		else
 		{
-			printf("%d", i);
+			printf("%i", i);
 		}
+		if (i != 100)
+		{
+			putchar(' ');
+		}
+
+		i++;
 	}
-	printf("\n")i;
+	putchar('\n');
 	return (0);
 }
